@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #080808;
+    overflow-x: hidden;
+    color: white;
+}
+
+#header{
+
+    height: 100vh;
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 2px 2px 2px white;
+}
+
+nav h2 span{
+    font-size: 30px;
+    color: rgb(180, 11, 47);
+}
+
+nav h2{
+    font-size: 25px;
+}
+
+nav ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: rgb(180, 11, 47);
+    position: absolute;
+    top: 23px;
+    left: 0px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    width:100%;
+    height:100pxx
+}
+
+.header-text p{
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    font-size:30px;
+    font-weight: 500;
+}
+
+.header-text h1{
+    position: absolute;
+    top: 350px;
+    left: 150px;
+    animation-name: change;
+    animation-duration: infinite;
+    animation-timing-function: ease-in;
+}
+
+.header-text h1 span{
+    color: rgb(180, 11, 47);
+}
+
+@keyframes change {
+  from {
+    color: white;
+    transform: scale(0);
+  }
+
+  to {
+    color: rgb(180, 11, 47);
+    transform: scale(1);
+  }
+
+    
+}
+
+.container2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 0px;
+}
+
+#img{
+    width: 270px;
+    height: 450px;
+    position: relative;
+    left: 150px;
+    top:10px
+}
+
+img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.container2 #About-text{
+    flex-basis: 65%;
+}
+
+.container2 #About-text h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+
+ .tab-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab-linsk{
+    text-align: left;
+
+}
+
+ .tabs{
+    font-size: larger;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tabs::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: rgb(180, 11, 47);
+    position: absolute;
+    left: 0px;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+
+.tab-content{
+    display: flex;
+    justify-content: space-around;
+}
+.tab-content ul li{
+    list-style: none;
+    margin: 5px 0px;
+}
+
+.tab-content ul li  span{
+    color: rgb(180, 11, 47);
+}
+
+#heading{
+    margin: 10px;
+    position: relative;
+    left: 110px;
+}
+
+
+
+
+#heading h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+
+.container3{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container3 .service{
+    width: 320px;
+    height: 230px;
+    margin-top: 20px;
+    border: 2px solid white;
+    box-shadow: 3px 3px 3px white;
+    border-radius: 5px;
+    margin-bottom: 100px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.container3 .service i{
+    font-size: 50px;
+    margin: 10px;
+}
+
+
+.container3 .service h2{
+    font-weight: 500;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+}
+
+.container3 .service p{
+    margin-left: 10px;
+    text-align: left;
+}
+
+.container3 .service:hover{
+    background-color: rgb(180, 11, 47);
+}
+
+.projects{
+    height: 500px;
+    width: 100%;
+}
+.container4{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.picture{
+width: 250px;
+ height: 360px;
+border: 2px solid white;
+margin-top: 20px;
+border-radius: 10px;
+transition-duration: 1s;
+}
+
+.container4 #pic1{
+    background-image: url(ecommerce.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container4 #pic2{
+    background-image: url(Admission.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container4 #pic3{
+    background-image: url(Hospital.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.picture h3{
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.title i{
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+     text-align: center;
+}
+
+.title{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: -20px;
+}
+
+.container4 .picture:hover{
+    transform: scale(0.8);
+}
+
+.footer{
+    margin-top: 70px;
+    width: 100%;
+    height: 300px;
+}
+
+.container5{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 200px;
+}
+
+.column-1 h1{
+    margin-left: 40px;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.column-1 p{
+    font-size: small;
+    margin-top: 9px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.column-1 p span{
+    margin-right: 7px;
+    font-size: 20px;
+    color: rgb(180, 11, 47);;
+}
+
+.column-1 .media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    position: relative;
+    left: -40px;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0px 8px;
+    color: #fff;
+}
+
+.column-1 button{
+    color: #fff;
+    background-color: rgb(180, 11, 47);;
+    margin-top: 7px;
+    margin-left: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.input{
+    width: 100%;
+    height: 100%;
+}
+
+.column-2 .input{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    justify-content: space-evenly;
+
+}
+
+.column-2 .input input{
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.column-2 .input textarea{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.column-2 .input button{
+    width: 130px;
+    color: #fff;
+    background-color: rgb(180, 11, 47);;
+    margin-top: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.projects .button button{
+    width: 130px;
+    color: #fff;
+    background-color: rgb(180, 11, 47);;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    left: 600px;
+    cursor: pointer;
+}
